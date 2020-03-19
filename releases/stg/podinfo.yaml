@@ -5,6 +5,7 @@ metadata:
   name: podinfo-rc
   namespace: kingdonb
   annotations:
+    fluxcd.io/ignore: "true"
     fluxcd.io/automated: "true"
     filter.fluxcd.io/chart-image: glob:stg-*
 spec:
