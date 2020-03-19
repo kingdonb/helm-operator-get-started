@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: kingdonb/podinfo
-      tag: dev-alfnpwwb
+      tag: dev-c055kp1l
     service:
       annotations:
         dev.okteto.com/auto-ingress: "true"
