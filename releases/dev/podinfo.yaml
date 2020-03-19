@@ -17,6 +17,9 @@ spec:
     image:
       repository: kingdonb/podinfo
       tag: dev-alfnpwwb
+    service:
+      annotations:
+        dev.okteto.com/auto-ingress: "true"
     replicaCount: 1
     hpa:
       enabled: false
