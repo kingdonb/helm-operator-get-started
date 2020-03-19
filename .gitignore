@@ -15,3 +15,4 @@
 
 # sealed-secrets master key
 sealed-secrets-key.yaml
+okteto-config-secret.yaml
