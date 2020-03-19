@@ -1,0 +1,18 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: enterprise
+  namespace: okteto
+spec:
+  releaseName: enterprise
+  chart:
+    repository: https://charts.okteto.com
+    version: 0.3.1
+    name: okteto-enterprise
+  valuesFrom:
+  - secretKeyRef:
+      name: okteto-config
+      namespace: okteto
+      key: values.yaml
+      optional: false
