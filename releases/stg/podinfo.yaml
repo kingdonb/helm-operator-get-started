@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: kingdonb/podinfo
-      tag: stg-9ij63o4c
+      tag: stg-fvtzgoqq
     replicaCount: 2
     hpa:
       enabled: true
