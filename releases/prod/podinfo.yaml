@@ -3,7 +3,7 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: podinfo-prod
-  namespace: prod
+  namespace: kingdonb
   annotations:
     fluxcd.io/automated: "true"
     filter.fluxcd.io/chart-image: semver:~0.4
@@ -17,4 +17,7 @@ spec:
     image:
       repository: kingdonb/podinfo
       tag: 0.4.11
+    service:
+      annotations:
+        dev.okteto.com/auto-ingress: "true"
     replicaCount: 3
