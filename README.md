@@ -160,7 +160,7 @@ The *ci-mock.sh* script does the following:
 Let's create an image corresponding to the `dev` branch (replace `stefanprodan` with your Docker Hub username):
 
 ```
-$ cd hack && ./ci-mock.sh -r stefanprodan/podinfo -b dev
+$ cd hack && ./ci-mock.sh -r kingdonb/podinfo -b dev
 
 Sending build context to Docker daemon  4.096kB
 Step 1/15 : FROM golang:1.13 as builder
@@ -193,12 +193,12 @@ metadata:
 spec:
   releaseName: podinfo-dev
   chart:
-    git: git@github.com:fluxcd/helm-operator-get-started
+    git: git@github.com:kingdonb/helm-operator-get-started
     path: charts/podinfo
     ref: master
   values:
     image:
-      repository: stefanprodan/podinfo
+      repository: kingdonb/podinfo
       tag: dev-kb9lm91e
     replicaCount: 1
 ```
@@ -249,7 +249,7 @@ I would create a release candidate by merging the podinfo code from `dev` into t
 The CI would kick in and publish a new image:
 
 ```bash
-$ cd hack && ./ci-mock.sh -r stefanprodan/podinfo -b stg
+$ cd hack && ./ci-mock.sh -r kingdonb/podinfo -b stg
 
 Successfully tagged stefanprodan/podinfo:stg-9ij63o4c
 The push refers to repository [docker.io/stefanprodan/podinfo]
@@ -271,12 +271,12 @@ metadata:
 spec:
   releaseName: podinfo-rc
   chart:
-    git: git@github.com:fluxcd/helm-operator-get-started
+    git: git@github.com:kingdonb/helm-operator-get-started
     path: charts/podinfo
     ref: master
   values:
     image:
-      repository: stefanprodan/podinfo
+      repository: kingdonb/podinfo
       tag: stg-9ij63o4c
     replicaCount: 2
     hpa:
@@ -306,7 +306,7 @@ After merging `stg` into `master` via a pull request, I would cut a release by t
 When I push the git tag, the CI will publish a new image in the `repo/app:git_tag` format:
 
 ```bash
-$ cd hack && ./ci-mock.sh -r stefanprodan/podinfo -v 0.4.10
+$ cd hack && ./ci-mock.sh -r kingdonb/podinfo -v 0.4.10
 
 Successfully built f176482168f8
 Successfully tagged stefanprodan/podinfo:0.4.10
@@ -326,12 +326,12 @@ metadata:
 spec:
   releaseName: podinfo-prod
   chart:
-    git: git@github.com:fluxcd/helm-operator-get-started
+    git: git@github.com:kingdonb/helm-operator-get-started
     path: charts/podinfo
     ref: master
   values:
     image:
-      repository: stefanprodan/podinfo
+      repository: kingdonb/podinfo
       tag: 0.4.10
     replicaCount: 3
 ```
@@ -339,7 +339,7 @@ spec:
 Now if I release a new patch, let's say `0.4.11`, Flux will automatically deploy it.
 
 ```bash
-$ cd hack && ./ci-mock.sh -r stefanprodan/podinfo -v 0.4.11
+$ cd hack && ./ci-mock.sh -r kingdonb/podinfo -v 0.4.11
 
 Successfully tagged stefanprodan/podinfo:0.4.11
 ```
