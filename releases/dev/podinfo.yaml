@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: kingdonb/podinfo
-      tag: dev-xkorexsn
+      tag: dev-alfnpwwb
     replicaCount: 1
     hpa:
       enabled: false
