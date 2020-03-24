@@ -185,7 +185,7 @@ spec:
               name: person-api-secret
               key: threescale-provider-key
         imagePullPolicy: IfNotPresent
-        image: kingdonb/person-api:okteto-dev-27b0e837
+        image: kingdonb/person-api:okteto-dev-827689e2
         name: person-api
         ports:
         - containerPort: 3000
