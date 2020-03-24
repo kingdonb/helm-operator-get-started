@@ -280,7 +280,7 @@ spec:
               name: pzaexcp-api-secret
               key: threescale-service-token
         imagePullPolicy: IfNotPresent
-        image: kingdonb/pzaexcp-api:api-okteto-dev-63aad698
+        image: kingdonb/pzaexcp-api:api-okteto-dev-4631253e
         name: pzaexcp-api
         ports:
         - containerPort: 3000
