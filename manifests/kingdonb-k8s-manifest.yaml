@@ -26,6 +26,8 @@ metadata:
     app.kubernetes.io/version: v1
   name: hrpy-api
   namespace: kingdonb
+  annotations:
+    fluxcd.io/automated: "true"
 spec:
   replicas: 1
   selector:
@@ -123,6 +125,8 @@ metadata:
     app.kubernetes.io/version: v1
   name: person-api
   namespace: kingdonb
+  annotations:
+    fluxcd.io/automated: "true"
 spec:
   replicas: 1
   selector:
@@ -215,6 +219,8 @@ metadata:
     app.kubernetes.io/version: v1
   name: pzaexcp-api
   namespace: kingdonb
+  annotations:
+    fluxcd.io/automated: "true"
 spec:
   replicas: 1
   selector:
@@ -307,6 +313,8 @@ metadata:
     app.kubernetes.io/version: v1
   name: pzaexcp-frontend
   namespace: kingdonb
+  annotations:
+    fluxcd.io/automated: "true"
 spec:
   replicas: 1
   selector:
