@@ -90,7 +90,7 @@ spec:
               name: hrpy-api-secret
               key: threescale-provider-key
         imagePullPolicy: IfNotPresent
-        image: kingdonb/hrpy-api:f19085129ce7
+        image: kingdonb/hrpy-api:okteto-dev-682639e8
         name: hrpy-api
         ports:
         - containerPort: 3000
@@ -185,7 +185,7 @@ spec:
               name: person-api-secret
               key: threescale-provider-key
         imagePullPolicy: IfNotPresent
-        image: kingdonb/person-api:0e6ccca2fbb5
+        image: kingdonb/person-api:okteto-dev-27b0e837
         name: person-api
         ports:
         - containerPort: 3000
@@ -407,7 +407,7 @@ spec:
               name: pzaexcp-frontend-secret
               key: okta-auth-server-id
         imagePullPolicy: IfNotPresent
-        image: kingdonb/pzaexcp-frontend:5b034c458162
+        image: kingdonb/pzaexcp-frontend:frontend-okteto-dev-8bc830c6
         name: pzaexcp-frontend
         ports:
         - containerPort: 3000
