@@ -1,13 +1,6 @@
 kind: StorageClass
 apiVersion: storage.k8s.io/v1
 metadata:
-  name: kingdonb-okteto-pzaexcp-frontend
-provisioner: kubernetes.io/no-provisioner
-volumeBindingMode: WaitForFirstConsumer
----
-kind: StorageClass
-apiVersion: storage.k8s.io/v1
-metadata:
   name: kingdonb-okteto-hrpy-api
 provisioner: kubernetes.io/no-provisioner
 volumeBindingMode: WaitForFirstConsumer
@@ -25,28 +18,6 @@ metadata:
   name: kingdonb-okteto-pzaexcp-api
 provisioner: kubernetes.io/no-provisioner
 volumeBindingMode: WaitForFirstConsumer
----
-apiVersion: v1
-kind: PersistentVolume
-metadata:
-  name: kingdonb-okteto-pzaexcp-frontend
-spec:
-  capacity:
-    storage: 500Gi
-  accessModes:
-  - ReadWriteOnce
-  persistentVolumeReclaimPolicy: Retain
-  storageClassName: kingdonb-okteto-pzaexcp-frontend
-  local:
-    path: /mnt/data-kingdonb/okteto-pzaexcp-frontend
-  nodeAffinity:
-    required:
-      nodeSelectorTerms:
-      - matchExpressions:
-        - key: kubernetes.io/hostname
-          operator: In
-          values:
-          - empfin-proj-dev.oit.nd.edu
 ---
 apiVersion: v1
 kind: PersistentVolume
