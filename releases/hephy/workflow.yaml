@@ -1,0 +1,15 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: hephy
+  namespace: deis
+spec:
+  releaseName: hephy
+  chart:
+    repository: https://charts.teamhephy.com
+    version: v2.21.4
+    name: workflow
+  values:
+    global:
+      use_rbac: "true"
