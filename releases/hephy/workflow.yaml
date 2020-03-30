@@ -13,3 +13,9 @@ spec:
   values:
     global:
       use_rbac: "true"
+      experimental_native_ingress: "true"
+    controller:
+      platform_domain: "empfin.kingdonb.dev"
+    router:
+      service_annotations:
+        okteto.com/auto-ingress: "true"
