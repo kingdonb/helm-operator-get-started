@@ -1,3 +1,4 @@
+---
 apiVersion: v1
 kind: ServiceAccount
 metadata:
@@ -53,7 +54,7 @@ spec:
       serviceAccountName: local-path-provisioner-service-account
       containers:
       - name: local-path-provisioner
-        image: rancher/local-path-provisioner:v0.0.12
+        image: rancher/local-path-provisioner:v0.0.12-arm
         imagePullPolicy: IfNotPresent
         command:
         - local-path-provisioner
@@ -70,9 +71,9 @@ spec:
             fieldRef:
               fieldPath: metadata.namespace
       volumes:
-        - name: config-volume
-          configMap:
-            name: local-path-config
+      - name: config-volume
+        configMap:
+          name: local-path-config
 ---
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
@@ -91,12 +92,12 @@ metadata:
   namespace: local-path-storage
 data:
   config.json: |-
-        {
-                "nodePathMap":[
-                {
-                        "node":"DEFAULT_PATH_FOR_NON_LISTED_NODES",
-                        "paths":["/opt/local-path-provisioner"]
-                }
-                ]
-        }
+    {
+            "nodePathMap":[
+            {
+                    "node":"DEFAULT_PATH_FOR_NON_LISTED_NODES",
+                    "paths":["/opt/local-path-provisioner"]
+            }
+            ]
+    }
 
