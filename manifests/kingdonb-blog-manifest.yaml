@@ -44,7 +44,7 @@ spec:
       - command: ["jekyll"]
         args: ["serve", "--force_polling", "--livereload", "--drafts"]
         imagePullPolicy: IfNotPresent
-        image: quay.io/kingdonb/minimal-mistakes:8eabb68
+        image: quay.io/kingdonb/minimal-mistakes:163505e
         name: minimal-mistakes
         ports:
         - containerPort: 4000
