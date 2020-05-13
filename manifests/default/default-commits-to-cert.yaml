@@ -9,6 +9,7 @@ spec:
   dnsNames:
   - '*.kingdonb.dev'
   - 'kingdonb.dev'
+  - 'kb.kingdonb.dev'
   issuerRef:
     kind: Issuer
     name: default-commits-to-issuer
