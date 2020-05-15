@@ -7,9 +7,10 @@ metadata:
   namespace: default
 spec:
   dnsNames:
-  - 'kpb.kingdonb.dev'
-  - 'jrc.kingdonb.dev'
-  - 'kingdonb.dev'
+  - kpb.kingdonb.dev
+  - jrc.kingdonb.dev
+  - kb.kingdonb.dev
+  - kingdonb.dev
   issuerRef:
     kind: Issuer
     name: default-commits-to-issuer
