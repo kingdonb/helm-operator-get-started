@@ -8,6 +8,8 @@ metadata:
 spec:
   dnsNames:
   - kpb.kingdonb.dev
+  - klb.kingdonb.dev
+  - aluc.kingdonb.dev
   - jrc.kingdonb.dev
   - kb.kingdonb.dev
   - kingdonb.dev
