@@ -4,6 +4,7 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
     kubernetes.io/tls-acme: "true"
+    cert-manager.io/issuer: default-commits-to-issuer
   name: star-default-commits-to
   namespace: default
 spec:
