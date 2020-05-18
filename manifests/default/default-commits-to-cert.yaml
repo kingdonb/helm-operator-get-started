@@ -1,6 +1,8 @@
 apiVersion: cert-manager.io/v1alpha2
 kind: Certificate
 metadata:
+  annotations:
+    fluxcd.io/ignore: "true"
   labels:
     app.kubernetes.io/part-of: commits-to
   name: default-commits-to-cert

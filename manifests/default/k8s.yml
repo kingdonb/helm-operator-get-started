@@ -95,7 +95,7 @@ spec:
               name: commits-to-secret
               key: MAILGUN_KEY
         imagePullPolicy: IfNotPresent
-        image: kingdonb/commits-to:20200515
+        image: kingdonb/commits-to:20200518
         name: commits-to
         ports:
         - containerPort: 5000
