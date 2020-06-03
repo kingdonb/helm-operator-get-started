@@ -6,5 +6,5 @@ metadata:
   labels:
     dev.okteto.com: "true"
     dev.okteto.com/id: kingdonb
-    dev.okteto.com/member-349b4ece-c265-49f3-a994-0f7bbd9721e6: "true"
-    dev.okteto.com/owner: 349b4ece-c265-49f3-a994-0f7bbd9721e6
+    dev.okteto.com/member-0e3518d1-4d28-4d34-8c4a-71f7cdce8bdc: "true"
+    dev.okteto.com/owner: 0e3518d1-4d28-4d34-8c4a-71f7cdce8bdc
