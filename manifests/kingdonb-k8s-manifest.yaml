@@ -29,6 +29,7 @@ metadata:
   namespace: kingdonb
   annotations:
     fluxcd.io/automated: "true"
+    fluxcd.io/ignore: "false"
 spec:
   replicas: 1
   selector:
@@ -129,6 +130,7 @@ metadata:
   namespace: kingdonb
   annotations:
     fluxcd.io/automated: "true"
+    fluxcd.io/ignore: "false"
 spec:
   replicas: 1
   selector:
@@ -224,6 +226,7 @@ metadata:
   namespace: kingdonb
   annotations:
     fluxcd.io/automated: "true"
+    fluxcd.io/ignore: "true"
     fluxcd.io/tag.pzaexcp-api: regex:^[0-9]{8}$|^.*-[a-f0-9]{8}$
 spec:
   replicas: 1
@@ -320,6 +323,7 @@ metadata:
   namespace: kingdonb
   annotations:
     fluxcd.io/automated: "true"
+    fluxcd.io/ignore: "true"
     fluxcd.io/tag.pzaexcp-frontend: regex:^[0-9]{8}$|^.*-[a-f0-9]{8}$
 spec:
   replicas: 1
