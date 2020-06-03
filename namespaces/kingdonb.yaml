@@ -3,3 +3,8 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: kingdonb
+  labels:
+    dev.okteto.com: "true"
+    dev.okteto.com/id: kingdonb
+    dev.okteto.com/member-349b4ece-c265-49f3-a994-0f7bbd9721e6: "true"
+    dev.okteto.com/owner: 349b4ece-c265-49f3-a994-0f7bbd9721e6
