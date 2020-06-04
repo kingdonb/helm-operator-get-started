@@ -367,6 +367,11 @@ spec:
             secretKeyRef:
               name: pzaexcp-frontend-secret
               key: person-api-base
+        - name: FINANCE_API_BASE
+          valueFrom:
+            secretKeyRef:
+              name: pzaexcp-frontend-secret
+              key: finance-api-base
         - name: BANNER_ADMIN_URL_BASE
           valueFrom:
             secretKeyRef:
@@ -387,6 +392,11 @@ spec:
             secretKeyRef:
               name: pzaexcp-frontend-secret
               key: form-api-key
+        - name: FINANCE_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: pzaexcp-frontend-secret
+              key: finance-api-key
         - name: OKTA_REDIRECT_URI
           valueFrom:
             secretKeyRef:
