@@ -367,7 +367,7 @@ spec:
             secretKeyRef:
               name: pzaexcp-frontend-secret
               key: person-api-base
-        - name: FINANCE_API_BASE
+        - name: FIN_API_BASE
           valueFrom:
             secretKeyRef:
               name: pzaexcp-frontend-secret
