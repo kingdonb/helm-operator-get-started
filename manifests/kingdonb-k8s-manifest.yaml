@@ -423,7 +423,7 @@ spec:
               name: pzaexcp-frontend-secret
               key: okta-auth-server-id
         imagePullPolicy: IfNotPresent
-        image: kingdonb/pzaexcp-frontend:frontend-aexp-orgn-42d93ac5
+        image: kingdonb/pzaexcp-frontend:20200608
         name: pzaexcp-frontend
         ports:
         - containerPort: 3000
