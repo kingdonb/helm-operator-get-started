@@ -273,6 +273,16 @@ spec:
             secretKeyRef:
               name: pzaexcp-api-secret
               key: person-api-key
+        - name: FIN_API_BASE
+          valueFrom:
+            secretKeyRef:
+              name: pzaexcp-api-secret
+              key: finance-api-base
+        - name: FINANCE_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: pzaexcp-api-secret
+              key: finance-api-key
         - name: THREESCALE_SERVICE_ID
           valueFrom:
             secretKeyRef:
