@@ -294,7 +294,7 @@ spec:
               name: pzaexcp-api-secret
               key: threescale-service-token
         imagePullPolicy: IfNotPresent
-        image: kingdonb/pzaexcp-api:20200610
+        image: kingdonb/pzaexcp-api:20200609
         name: pzaexcp-api
         ports:
         - containerPort: 3000
