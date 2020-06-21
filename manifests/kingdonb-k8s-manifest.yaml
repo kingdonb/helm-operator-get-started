@@ -90,7 +90,7 @@ spec:
             secretKeyRef:
               name: hrpy-api-secret
               key: threescale-provider-key
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         image: kingdonb/hrpy-api:okteto-dev-8f3f8a4f
         name: hrpy-api
         ports:
@@ -186,7 +186,7 @@ spec:
             secretKeyRef:
               name: person-api-secret
               key: threescale-provider-key
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         image: kingdonb/person-api:okteto-dev-5379242d
         name: person-api
         ports:
@@ -293,7 +293,7 @@ spec:
             secretKeyRef:
               name: pzaexcp-api-secret
               key: threescale-service-token
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         image: kingdonb/pzaexcp-api:20200614
         name: pzaexcp-api
         ports:
@@ -432,7 +432,7 @@ spec:
             secretKeyRef:
               name: pzaexcp-frontend-secret
               key: okta-auth-server-id
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         image: kingdonb/pzaexcp-frontend:20200620
         name: pzaexcp-frontend
         ports:
@@ -531,7 +531,7 @@ spec:
             secretKeyRef:
               name: finance-api-secret
               key: threescale-provider-key
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         image: kingdonb/finance-api:20200620
         name: finance-api
         ports:
