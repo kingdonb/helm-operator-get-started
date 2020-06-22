@@ -229,7 +229,7 @@ metadata:
     fluxcd.io/ignore: "false"
     fluxcd.io/tag.pzaexcp-api: regex:^[0-9]{8}$|^.*-[a-f0-9]{8}$
 spec:
-  replicas: 0
+  replicas: 1
   selector:
     matchLabels:
       app: pzaexcp-api
