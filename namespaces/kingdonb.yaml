@@ -2,9 +2,12 @@
 apiVersion: v1
 kind: Namespace
 metadata:
+  annotations:
+    fluxcd.io/ignore: "true"
   name: kingdonb
   labels:
     dev.okteto.com: "true"
     dev.okteto.com/id: kingdonb
     dev.okteto.com/member-0e3518d1-4d28-4d34-8c4a-71f7cdce8bdc: "true"
     dev.okteto.com/owner: 0e3518d1-4d28-4d34-8c4a-71f7cdce8bdc
+    dev.okteto.com/token: asdf
