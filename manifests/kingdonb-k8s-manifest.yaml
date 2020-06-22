@@ -31,7 +31,7 @@ metadata:
     fluxcd.io/automated: "true"
     fluxcd.io/ignore: "false"
 spec:
-  replicas: 1
+  replicas: 0
   selector:
     matchLabels:
       app: hrpy-api
@@ -132,7 +132,7 @@ metadata:
     fluxcd.io/automated: "true"
     fluxcd.io/ignore: "false"
 spec:
-  replicas: 1
+  replicas: 0
   selector:
     matchLabels:
       app: person-api
@@ -229,7 +229,7 @@ metadata:
     fluxcd.io/ignore: "false"
     fluxcd.io/tag.pzaexcp-api: regex:^[0-9]{8}$|^.*-[a-f0-9]{8}$
 spec:
-  replicas: 1
+  replicas: 0
   selector:
     matchLabels:
       app: pzaexcp-api
@@ -336,7 +336,7 @@ metadata:
     fluxcd.io/ignore: "false"
     fluxcd.io/tag.pzaexcp-frontend: regex:^[0-9]{8}$|^.*-[a-f0-9]{8}$
 spec:
-  replicas: 1
+  replicas: 0
   selector:
     matchLabels:
       app: pzaexcp-frontend
@@ -472,7 +472,7 @@ metadata:
     app.kubernetes.io/version: v1
   name: finance-api
 spec:
-  replicas: 1
+  replicas: 0
   selector:
     matchLabels:
       app: finance-api
