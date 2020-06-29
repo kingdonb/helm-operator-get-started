@@ -91,7 +91,7 @@ spec:
               name: hrpy-api-secret
               key: threescale-provider-key
         imagePullPolicy: Always
-        image: kingdonb/hrpy-api:okteto-dev-8f3f8a4f
+        image: registry.empfin.kingdonb.dev/kingdonb/hrpy-api:okteto-dev-8f3f8a4f
         name: hrpy-api
         ports:
         - containerPort: 3000
@@ -187,7 +187,7 @@ spec:
               name: person-api-secret
               key: threescale-provider-key
         imagePullPolicy: Always
-        image: kingdonb/person-api:okteto-dev-5379242d
+        image: registry.empfin.kingdonb.dev/kingdonb/person-api:okteto-dev-5379242d
         name: person-api
         ports:
         - containerPort: 3000
@@ -433,7 +433,7 @@ spec:
               name: pzaexcp-frontend-secret
               key: okta-auth-server-id
         imagePullPolicy: Always
-        image: kingdonb/pzaexcp-frontend:frontend-dev-bf7aee74
+        image: registry.empfin.kingdonb.dev/kingdonb/pzaexcp-frontend:frontend-dev-bf7aee74
         name: pzaexcp-frontend
         ports:
         - containerPort: 3000
@@ -532,7 +532,7 @@ spec:
               name: finance-api-secret
               key: threescale-provider-key
         imagePullPolicy: Always
-        image: kingdonb/finance-api:20200620
+        image: registry.empfin.kingdonb.dev/kingdonb/finance-api:20200620
         name: finance-api
         ports:
         - containerPort: 3000
