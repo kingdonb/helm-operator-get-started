@@ -433,7 +433,7 @@ spec:
               name: pzaexcp-frontend-secret
               key: okta-auth-server-id
         imagePullPolicy: Always
-        image: registry.empfin.kingdonb.dev/kingdonb/pzaexcp-frontend:frontend-rails-6-dev-56e6ac9a
+        image: registry.empfin.kingdonb.dev/kingdonb/pzaexcp-frontend:frontend-rails-6-dev-ecfa7367
         name: pzaexcp-frontend
         ports:
         - containerPort: 3000
