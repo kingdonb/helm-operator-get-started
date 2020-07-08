@@ -225,7 +225,7 @@ metadata:
   name: pzaexcp-api
   namespace: kingdonb
   annotations:
-    fluxcd.io/automated: "false"
+    fluxcd.io/automated: "true"
     fluxcd.io/ignore: "false"
     fluxcd.io/tag.pzaexcp-api: regex:^[0-9]{8}$|^.*-[a-f0-9]{8}$
 spec:
@@ -332,7 +332,7 @@ metadata:
   name: pzaexcp-frontend
   namespace: kingdonb
   annotations:
-    fluxcd.io/automated: "false"
+    fluxcd.io/automated: "true"
     fluxcd.io/ignore: "false"
     fluxcd.io/tag.pzaexcp-frontend: regex:^[0-9]{8}$|^.*-[a-f0-9]{8}$
 spec:
