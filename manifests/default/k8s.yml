@@ -1,3 +1,4 @@
+---
 apiVersion: v1
 kind: Service
 metadata:
@@ -99,7 +100,7 @@ spec:
               name: commits-to-secret
               key: MAILGUN_KEY
         imagePullPolicy: IfNotPresent
-        image: kingdonb/commits-to:20200518
+        image: kingdonb/commits-to:20200711
         name: commits-to
         ports:
         - containerPort: 5000
