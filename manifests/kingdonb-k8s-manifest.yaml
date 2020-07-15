@@ -294,7 +294,7 @@ spec:
               name: pzaexcp-api-secret
               key: threescale-service-token
         imagePullPolicy: Always
-        image: registry.empfin.kingdonb.dev/kingdonb/pzaexcp-api:api-populate-aexp-orgn-f9732df5
+        image: registry.empfin.kingdonb.dev/kingdonb/pzaexcp-api:api-populate-aexp-orgn-0e289262
         name: pzaexcp-api
         ports:
         - containerPort: 3000
