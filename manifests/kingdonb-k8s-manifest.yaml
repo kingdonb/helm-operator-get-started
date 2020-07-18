@@ -294,7 +294,7 @@ spec:
               name: pzaexcp-api-secret
               key: threescale-service-token
         imagePullPolicy: Always
-        image: registry.empfin.kingdonb.dev/kingdonb/pzaexcp-api:docker-support-4819571b
+        image: registry.empfin.kingdonb.dev/kingdonb/pzaexcp-api:docker-support-767596bb
         name: pzaexcp-api
         ports:
         - containerPort: 3000
