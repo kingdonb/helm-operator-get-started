@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   annotations:
@@ -13,43 +13,55 @@ spec:
     http:
       paths:
       - backend:
-          serviceName: commits-to
-          servicePort: 5000
+          service:
+            name: commits-to
+            port:
+              number: 5000
         path: /
   - host: kpb.kingdonb.dev
     http:
       paths:
       - backend:
-          serviceName: commits-to
-          servicePort: 5000
+          service:
+            name: commits-to
+            port:
+              number: 5000
         path: /
   - host: klb.kingdonb.dev
     http:
       paths:
       - backend:
-          serviceName: commits-to
-          servicePort: 5000
+          service:
+            name: commits-to
+            port:
+              number: 5000
         path: /
   - host: jrc.kingdonb.dev
     http:
       paths:
       - backend:
-          serviceName: commits-to
-          servicePort: 5000
+          service:
+            name: commits-to
+            port:
+              number: 5000
         path: /
   - host: aluc.kingdonb.dev
     http:
       paths:
       - backend:
-          serviceName: commits-to
-          servicePort: 5000
+          service:
+            name: commits-to
+            port:
+              number: 5000
         path: /
   - host: kb.kingdonb.dev
     http:
       paths:
       - backend:
-          serviceName: commits-to
-          servicePort: 5000
+          service:
+            name: commits-to
+            port:
+              number: 5000
         path: /
   tls:
   - hosts:
