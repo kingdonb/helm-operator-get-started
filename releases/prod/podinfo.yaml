@@ -5,7 +5,7 @@ metadata:
   name: podinfo-prod
   namespace: prod
   annotations:
-    fluxcd.io/automated: "true"
+    fluxcd.io/automated: "false"
     filter.fluxcd.io/chart-image: semver:~5.1
 spec:
   releaseName: podinfo-prod
@@ -16,5 +16,5 @@ spec:
   values:
     image:
       repository: stefanprodan/podinfo
-      tag: 5.1.4
+      tag: 5.1.0
     replicaCount: 3
